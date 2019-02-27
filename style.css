@@ -1,0 +1,81 @@
+#nagłówek
+{
+	display: inline-table;
+	background-color: #59482a;
+	box-shadow: 5px 5px 5px 5px;
+}
+
+#tekst
+{
+	margin: 25px;
+	font-family: Calibri;
+	font-size: 25px;
+}
+
+#list
+{
+	list-style-type: none;
+	color: gray;
+	font-size: 20px;
+}
+
+#zdj
+{
+	width: 75%;
+}
+
+.stopa
+{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #31353a;
+	box-shadow: 5px 5px 5px;
+}
+
+.lista
+{
+	width: 500px;
+	height: 100px;
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	background-color: #31353a;
+	box-shadow: 5px 5px 5px;
+}
+
+.drink
+{
+	width: 300px;
+	height: 213px;
+	display: inline-block;
+	float: right;
+	background-color: #31353a;
+	box-shadow: 2px 2px 2px 5px;
+	font-family: Calibri;
+	font-size: 22px;
+}
+
+.listek
+{
+	color: white;
+	font-family: fantasy;
+}
+
+.info
+{
+	text-align: left;
+	font-family: fantasy;
+	background-color: #31353a;
+	box-shadow: 5px 5px 5px;
+}
+
+img
+{
+	float: left;
+}
+
+body
+{
+	background-color: #36393E;
+}
