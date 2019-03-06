@@ -1,57 +1,102 @@
-﻿<!DOCTYPE html>
-<html lang = pl>
-	<head>
-		<title>Tyrion Bot na twój serwer Discord!</title>
-		<meta charset="UTF-8">
-		<meta name="Keywords" content="Discord, Bot, Tyrion">
-		<meta name="Description" content="Ten bot głównie '<i>pije i wie różne rzeczy</i>', potrafi jeszcze dawać motywacyjne cytaty i w przyszłości dodane zostaną inne funkcje wykorzystujące czat głosowy!">
-		<meta name="Viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <!-- Głowa mnie boil eee -->
+    <meta charset="UTF-8" />
+    <meta name="Keywords" content="Discord, Bot, Tyrion" />
+    <meta name="Description" content="Ten bot głównie '<i>pije i wie różne rzeczy</i>', potrafi jeszcze dawać motywacyjne cytaty i w przyszłości dodane zostaną inne funkcje wykorzystujące czat głosowy!" />
+    <meta name="Viewport" content="Width=Device-Width, Initial-Scale=1, Shrink-To-Fit=no" />
+    
+    <title>Tyrion Lannister do usług!</title>
 
-		<link rel="icon" href="discord.png">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<!-- Nagłówek -->
-		<div id="nagłówek">
-			<p><img src = "dwarf.jpg" alt = "Każdy powinien wiedzieć jak on wygląda..."><i id = "tekst">"[...]umysł zaś potrzebuje książek, podobnie jak miecz <br> potrzebuje kamienia do ostrzenia,<br> jeśli oczywiście, ma zachować ostrość."</i><br><b>~Tyrion Lannister</b></p>
-		</div>
-		<!-- Lista z linkami -->
-		<ul class="lista">
-			<li class="listek">
-				<div>
-					<img src="discord.png" alt="*" width="4%" height="4%">
-					<a href="https://discordapp.com/api/oauth2/authorize?client_id=530054421988507648&permissions=0&scope=bot" style="color: white;">Zaproś mnie na swój serwer!</a>
-				<div>
-			</li>
-			<li class="listek">
-				<img src="twitter.png" alt="*" width="4%" height="4%">
-				<a href="https://twitter.com" style="color: white;">Zobacz moje konto na Twitterze</a>
-			</li>
-			<li class="listek">
-				<img src="yt.png" alt="*" width="4%" height="4%">
-				<a href="https://youtube.com" style="color: white;">Zobacz mój kanał na YouTube</a>
-			</li>
-		</ul>
-		</div>
-		<!-- Weeeeeeź nie pytaj -->
-		<div>
-			<p class="drink">Głównie robi to:
-				<img src="drink.gif" id="zdj">
-			</p>
-		</div>
-		<!-- Komendy & info -->
-		<div class="info">
-			<h1>Aktualne komendy</h1>
-			<p>Prefix to '?'</p>
-			<ul id="list">
-				<li>?pomoc - Bot wysyła dm z listą komend.</li>
-				<br><li>?quote - Motywacyjne cytaty od przeróżnych ludzi.</li>
-				<br><li>?roll - Losowa komenda</li>
-				<br><li>?zapro - Tworzy zaproszenie na serwer</li>
-				<br><li>?mr_clean - Usuwa wiadomości na obecnym kanale, przecież nie chcemy żeby ktoś czytał nasze sekrety</li>
-				<br><li>Inne komendy trudne do wytłumaczenia: ?hearmeroar, ?flukru, ?test, ?niemampomysłu</li>
-				<li style="font-size: 10px;">Nie zaleca się pisać na czacie: karzeł, imp, dwarf. ON tego nie lubi to Bot, wątpie żeby ktoś chciał,aby się zbuntował jak Skynet.</li>
-			</ul>
-		</div>
-	</body>
+    <!-- Resources -->
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="Stylesheet" href="StyleFront.css" />
+    <link rel="Icon" href="discord.png" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Nagłówek -->
+            <div class="col col-sm col-md col-lg col-xl">
+                <div id="heading">
+                    <p>
+                        <img src="dwarf.jpg" alt="Każdy powinien wiedzieć jak on wygląda..." />
+                        <i id="tekst">"[...]umysł zaś potrzebuje książek, podobnie jak miecz <br> potrzebuje kamienia do ostrzenia,<br> jeśli oczywiście, ma zachować ostrość."</i>
+                        <br><b>~Tyrion Lannister</b>
+                    </p>
+                </div>
+            </div>
+            <!-- Lista z linkami -->
+            <div class="col col-sm col-md col-lg col-xl">
+                <ul class="list">
+                    <li class="listext">
+                        <img src="discord.png" width="4%" height="4%" />
+                        <a href="https://discordapp.com/api/oauth2/authorize?client_id=530054421988507648&permissions=0&scope=bot" style="color: white;"><abbr title="No na co czekasz?">Zaproś mnie na swój serwer!</abbr></a>
+                    </li>
+                    <li class="listext">
+                        <img src="twitter.png" width="4%" height="4%" />
+                        <a href="https://twitter.com" style="color: white;"><abbr title="Hej, jeśli to widzisz to miłego dnia!">Zobacz moje konto na Twitterze</abbr></a>
+                    </li>
+                    <li class="listext">
+                        <img src="youtube.png" width="4%" height="4%" />
+                        <a href="https://youtube.com" style="color: white;"><abbr title="Mam na myśli twórcę i to nie jest George R.R. Martin">Zobacz mój kanał na YouTube</abbr></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Pusty slot pod lepsiejszy wygląd -->
+        <div class="row"><p></p></div>
+
+        <!-- Komendy & Info -->
+        <div class="row">
+            <div class="col col-sm col-md col-lg col-xl">
+                <div class="info">
+                    <h1>Aktualne komendy</h1>
+                    <p>Prefix to '?'</p>
+                    <ul id="list">
+                        <li>
+                            <p>?pomoc - Bot wysyła dm z listą komend.</p>
+                        </li>
+                        <li>
+                            <p>?quote - Motywacyjne cytaty od przeróżnych ludzi.</p>
+                        </li>
+                        <li>
+                            <p>?roll - Losowa komenda</p>
+                        </li>
+                        <li>
+                            <p>?zapro - Tworzy zaproszenie na serwer</p>
+                        </li>
+                        <li>
+                            <p>?mr_clean - Usuwa wiadomości na obecnym kanale, przecież nie chcemy żeby ktoś czytał nasze sekrety</p>
+                        </li>
+                        <li>
+                            <p>Inne komendy trudne do wytłumaczenia: ?hearmeroar, ?flukru, ?test, ?niemampomysłu</p>
+                        </li>
+                        <li style="font-size: 10px;">
+                            <p>Nie zaleca się pisać na czacie: karzeł, imp, dwarf. ON tego nie lubi to Bot, wątpie żeby ktoś chciał,aby się zbuntował jak Skynet.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Alkohol +18 -->
+            <div class="col col-sm col-md col-lg col-xl">
+                <div class="drink">
+                    <p class="listext">
+                        Głównie robi to:
+                        <img src="drink.gif" id="img"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQ -> Popper.js -> bs js | Is that clear? -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
